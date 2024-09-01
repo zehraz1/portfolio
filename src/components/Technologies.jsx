@@ -23,7 +23,7 @@ import githubIcon from '../assets/mdi_github.svg';
 
 const Technologies = () => {
   return (
-    <div className="2xl:pl-48 2xl:pt-20 2xl:pb-20">
+    <div className="2xl:pl-48 2xl:pt-20 2xl:pb-20" id='skills'>
         <h1 className="text-white text-5xl">These are the<br></br> technolgies I've been using</h1>
         <div className="2xl:pt-10 flex justify-start space-x-28 2xl:text-xl">
 

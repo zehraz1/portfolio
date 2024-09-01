@@ -3,7 +3,7 @@ import websitePic2 from '../assets/website2.png';
 const Projects = () => {
   return (
     <>
-    <div>
+    <div id='projects' className='pt-5'>
       <h1 className="text-white text-5xl 2xl:pl-48">Projects</h1>
       
       <div className='2xl:mr-56'>

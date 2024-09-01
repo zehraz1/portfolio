@@ -2,6 +2,8 @@ import linkedinIcon from '../assets/mdi_linkedin.svg';
 import githubIcon from '../assets/mdi_github.svg';
 import emailIcon from '../assets/material-symbols_mail-rounded.svg';
 
+import { Link } from 'react-scroll';
+
 
 const Navbar = ()=>{
     return(
@@ -9,15 +11,19 @@ const Navbar = ()=>{
             <div className="p-6 bg-customGrey rounded-full flex items-center" >
                 <ul className="text-customPurple text-center flex justify-center space-x-12 text-2xl">
                     <li>
-                        <a href="#home" className="text-white pl-12">Zehra</a>
+                      <Link to="home" smooth={true} duration={500} className="text-white pl-12 cursor-pointer">Zehra</Link>
                     </li>
                     
                     <li>
-                        <a href="#education" className="hover:text-white">education</a>
+                        <Link to="projects" smooth={true} duration={500} className="text-customPurple pl-12 hover:text-white cursor-pointer">projects</Link>
                     </li>
 
                     <li>
-                        <a href="#projects" className="hover:text-white">projects</a>
+                        <Link to="skills" smooth={true} duration={500} className="text-customPurple pl-12 hover:text-white cursor-pointer">skills</Link>
+                    </li>
+
+                    <li>
+                        <Link to="contact" smooth={true} duration={500} className="text-customPurple pl-12 hover:text-white cursor-pointer">contact</Link>
                     </li>
 
                     <li className='flex items-center space-x-3'>
