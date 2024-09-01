@@ -2,6 +2,7 @@
   "name": "me",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://zehraz1.github.io/Portfolio-Projects",
   "type": "module",
   "scripts": {
     "dev": "vite",
