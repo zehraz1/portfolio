@@ -24,10 +24,10 @@ const Navbar = ()=>{
                         <a href="https://www.linkedin.com/in/zehra-zaidi-bb004b1b2/" className=""> <img src={linkedinIcon} className="h-7" />
                         </a>
 
-                        <a href=""> <img src={githubIcon} className="h-7" />
+                        <a href="https://github.com/zehraz1/Portfolio-Projects/"> <img src={githubIcon} className="h-7" />
                         </a>
 
-                        <a href="" className="pr-12"> <img src={emailIcon} className="h-7" />
+                        <a href="mailto:zehraahmedzaidi@gmail.com" className="pr-12"> <img src={emailIcon} className="h-7" />
                         </a>
 
                     </li>
