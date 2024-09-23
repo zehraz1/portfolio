@@ -16,7 +16,7 @@ import riscIcon from '../assets/riscv.png';
 import nodeIcon from '../assets/nodejs.png';
 import gitIcon from '../assets/git.png';
 import flaskIcon from '../assets/flask.png';
-import junitIcon from '../assets/JUNIT.png';
+import junitIcon from '../assets/JUnit.png';
 import githubIcon from '../assets/mdi_github.svg';
 
 import { motion, useAnimation } from 'framer-motion';
