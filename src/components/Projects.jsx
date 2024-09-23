@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="pt-20 pb-[6rem] md:pb-[10rem]" ref={ref}>
+      <div id="projects" className="pt-20 pb-[6rem] md:pb-[10rem] w-[90%] lg:w-[99%] mx-auto" ref={ref}>
         {/* Adjust padding/margin to align with HomeMain header */}
         <h1 className="text-white text-3xl md:text-5xl lg:text-6xl md:ml-[5rem] xl:ml-[11rem] pb-5 text-center md:text-left m-4  md:pb-[4rem] font-light">
           Projects
