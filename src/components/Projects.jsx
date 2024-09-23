@@ -39,7 +39,7 @@ const Projects = () => {
         {/* Project container */}
         <div className="container mx-auto px-4 md:ml-[8rem] xl:ml-[10rem] pt-6 font-light">
           {/* Mobile view: flex with horizontal scroll; Medium and large screens: 2-column grid */}
-          <div className="flex md:grid md:grid-cols-2 md:gap-6 lg:gap-8 overflow-x-auto md:overflow-x-hidden space-x-4 md:space-x-0 scroll-smooth hide-scrollbar w-full">
+          <div className="flex md:grid md:grid-cols-2 md:gap-6 lg:gap-8 overflow-x-auto md:overflow-x-hidden space-x-4 md:space-x-0 scroll-smooth hide-scrollbar w-[90%] lg:w-[99%]">
             
             {/* Project 1: E-Commerce Website */}
             <motion.div
