@@ -21,7 +21,7 @@ const letterAnimation = {
 const HomeMain = () => {
   return (
     <>   
-      <div id='home' className="flex flex-col justify-center items-center lg:pt-[16rem] lg:pb-[10rem] max-h-screen md:pt-28 md:flex-row-reverse md:justify-between md:items-center w-[90%] md:w-[85%] lg:w-[80%] mx-auto pb-[5rem]">
+      <div id='home' className="flex flex-col justify-center items-center lg:pt-[16rem] lg:pb-[10rem] max-h-screen md:pt-[10rem] md:flex-row-reverse md:justify-between md:items-center w-[90%] md:w-[85%] lg:w-[80%] mx-auto pb-[5rem] pt-[5rem]">
         {/* Image on top by default, side-by-side on medium screens (on the right) */}
         <div className="flex justify-center pb-12 md:pb-10 md:p-0 md:w-1/2 lg:w-1/2">
           <img src={profilePic} className="rounded-full h-[10rem] w-[10rem] object-cover md:h-[20rem] md:w-[20rem] lg:h-[28rem] lg:w-[28rem]" alt="Profile" />
