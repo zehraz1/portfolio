@@ -1,66 +1,121 @@
 /* eslint-disable react/no-unescaped-entities */
-import linkedinIcon from '../assets/mdi_linkedin.svg';
-import githubIcon from '../assets/mdi_github.svg';
-import emailIcon from '../assets/material-symbols_mail-rounded.svg';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const ContactMe = () => {
+  const form = useRef();
+  const [buttonText, setButtonText] = useState('Submit');
+  
+  // Framer Motion's useAnimation hook to control animations
+  const controls = useAnimation();
+  
+  // React Intersection Observer to detect when the section is in view
+  const [ref, inView] = useInView({ threshold: 0.3 });
 
-    const form = useRef();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
 
-    const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+    setButtonText('Submitting...');
 
     emailjs
-      .sendForm('service_bkoujm5', 'template_s7kymit', form.current, {
-        publicKey: 'mkPG8OAYhgwN2_NKm',
-      })
+      .sendForm('service_bkoujm5', 'template_s7kymit', form.current, 'mkPG8OAYhgwN2_NKm')
       .then(
         () => {
-          console.log('SUCCESS!');
+          setButtonText('Submitted');
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+          setButtonText('Submit');
+        }
       );
-      e.target.reset()
+    e.target.reset();
   };
 
+  const formVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  };
 
   return (
-    <div className="2xl:pl-48 2xl:p-10" id='contact'>
-      <div>
-        
-        <h1 className="text-white text-5xl"> Let's Get in Touch!</h1>
-        <div className='mt-[54px] absolute'>
-            <h1 className="text-white text-3xl">Visit my profiles </h1>
-            <div className='absolute mt-4 text-xl text-white'>
-                <a className='flex items-center  hover:text-customGray ' href='https://www.linkedin.com/in/zehra-zaidi-bb004b1b2/'><img src={linkedinIcon} className='w-16 mb-2 mr-2'/>LinkedIn</a>
-                <a className='flex items-center  hover:text-customGray ' href='https://github.com/zehraz1/Portfolio-Projects/'><img src={githubIcon} className='w-16 mb-2 mr-2'/>Github</a>
-                <a className='flex items-center  hover:text-customGray ' href='mailto:zehraahmedzaidi@gmail.com'><img src={emailIcon} className='w-16 mb-2 mr-2'/>Email</a>
-               
-            </div>
-        </div>
+    <div className="pt-[15rem] md:pb-[12rem] pb-[5rem]" id="contact" ref={ref}>
+      <motion.div
+        initial="hidden"
+        animate={controls} // Trigger animations using useAnimation
+        variants={formVariant}
+      >
+        <h1 className="text-white text-3xl md:text-5xl lg:text-6xl text-center font-light md:pb-[4rem] pb-[2rem] md:text-left md:ml-[5rem] xl:ml-[11rem] m-4">
+          Let's get in touch!
+        </h1>
 
-=        <section className="flex justify-end mr-56  text-white">
-            <form className="space-y-7" onSubmit={sendEmail} ref={form}>
-                <input type="text" name="user_name" placeholder="Name" className="w-80 h-10 border p-2 border-zinc-50 rounded bg-transparent mr-5" required></input>
+        <section className="text-center text-white w-[90%] md:w-[80%] mx-auto ">
+          <motion.form
+            className="space-y-3"
+            onSubmit={sendEmail}
+            ref={form}
+            initial="hidden"
+            animate={controls} // Trigger animations using useAnimation
+            variants={formVariant}
+          >
+            <motion.div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 space-y-3 sm:space-y-0" variants={formVariant}>
+              <motion.input
+                type="text"
+                name="user_name"
+                placeholder="Name"
+                className="border p-2 md:p-6 border-customGrey rounded lg:text-lg lg:font-normal bg-transparent w-full"
+                required
+                variants={formVariant}
+              />
 
-                <input type="email" name="user_email" placeholder="Email" className="w-80 h-10 border p-2 border-zinc-50 rounded bg-transparent " required></input>
+              <motion.input
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                className="border p-2 md:p-6 border-customGrey lg:text-lg lg:font-normal rounded bg-transparent w-full"
+                required
+                variants={formVariant}
+              />
+            </motion.div>
 
-                <input type="text" name="user_subject" placeholder="Subject" className="w-[660px] h-10 border p-2 border-zinc-50 rounded bg-transparent block" required></input>
+            <motion.input
+              type="text"
+              name="user_subject"
+              placeholder="Subject"
+              className="border p-2 md:p-6 border-customGrey lg:text-lg lg:font-normal rounded bg-transparent w-full"
+              required
+              variants={formVariant}
+            />
 
-                <textarea name="message" placeholder="Message" className=" border w-[660px] h-72 p-2 border-zinc-50 rounded bg-transparent block resize" required></textarea>
+            <motion.textarea
+              name="message"
+              placeholder="Message"
+              className="border border-customGrey p-2 md:p-4 rounded bg-transparent lg:text-lg lg:font-normal w-full md:resize"
+              rows="6"
+              required
+              variants={formVariant}
+            ></motion.textarea>
 
-                <button className="bg-white w-44 rounded font-bold text-black" type="submit">Submit</button>
-
-            </form>
+            <motion.button
+              className={`bg-customPurple md:w-[10rem] font-light md:flex md:justify-center md:text-lg p-2 md:p-4 hover:bg-customGrey text-white w-[40%] rounded-full mt-3 ${buttonText === 'Submitted' ? 'cursor-not-allowed' : ''}`}
+              type="submit"
+              disabled={buttonText === 'Submitted'}
+              variants={formVariant}
+            >
+              {buttonText}
+            </motion.button>
+          </motion.form>
         </section>
-      </div>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
 export default ContactMe;

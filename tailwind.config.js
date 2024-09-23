@@ -13,6 +13,10 @@ export default {
         customGrey: '#211F23',
         customPurple: '#B292FF',
         customGray: '#717171',
+        green: '#C3C99E',
+        blue: '#7D9CA5',
+        beige:'#C2C2C2',
+        gpastel: '#C0E5D7',
       }
     },
   },

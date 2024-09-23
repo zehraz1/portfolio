@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center h-full m-3 md:mt-5 sticky top-0 z-50">
-      <div className="w-[99.5%] bg-customGrey rounded-full sm:w-fit md:p-3">
-        <div className="overflow-x-auto md:overflow-visible whitespace-nowrap hide-scrollbar">
+    <div className="flex justify-center h-full m-3 md:mt-5 sticky top-0 borderz-50 pb-[5rem] md:pb-0">
+      <div className="w-[99.5%] bg-customGray rounded-full sm:w-fit md:p-3 backdrop-blur-lg backdrop-filter bg-opacity-25 ">
+        <div className="overflow-x-auto md:overflow-visible whitespace-nowrap hide-scrollbar  ">
           <ul className="text-customPurple text-center flex space-x-12 md:space-x-7 lg:space-x-8 text-lg p-4 sm:text-2xl sm:p-3 md:justify-center lg:text-2xl">
             <li>
               <Link to="home" smooth={true} duration={500} className="text-white cursor-pointer">
