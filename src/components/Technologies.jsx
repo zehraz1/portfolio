@@ -43,8 +43,10 @@ const Technologies = () => {
   }, [controls, inView]);
 
   return (
-    <div className="pb-[6rem] pt-20" id="skills" ref={ref}>
-      <h1 className="text-white text-3xl md:pb-[4rem] text-center lg:text-6xl md:text-left md:ml-[5rem] xl:ml-[11rem] md:text-5xl m-4 font-light">
+    <div className='flex justify-center'>
+    <div className='w-[95%] '>
+    <div className="pb-[6rem] pt-20 w-[99%]"  id="skills" ref={ref}>
+      <h1 className="text-white text-3xl md:pb-[4rem] text-center lg:text-5xl md:text-left md:ml-[5rem] xl:ml-[11rem] md:text-5xl m-4 font-light">
         These are the
         <br />
         technologies I've been using
@@ -60,8 +62,8 @@ const Technologies = () => {
             initial="hidden"
             animate={controls}
           >
-            <h1 className="md:text-2xl md:pb-6 text-md font-light">DevOps tools</h1>
-            <ul className="pt-4 space-y-3 md:text-xl">
+            <h1 className="md:text-xl md:pb-6 text-md font-light">DevOps tools</h1>
+            <ul className="pt-4 space-y-3 md:text-lg">
               <li className="flex items-center">
                 <img src={githubIcon} className="w-[2rem] md:w-[3rem] mr-2" alt="GitHub" />
                 GitHub
@@ -84,8 +86,8 @@ const Technologies = () => {
             initial="hidden"
             animate={controls}
           >
-            <h1 className="md:text-2xl md:pb-6 font-light">Back End</h1>
-            <ul className="pt-4 md:space-y-7 space-y-5 text-md md:text-xl">
+            <h1 className="md:text-xl md:pb-6 font-light">Back End</h1>
+            <ul className="pt-4 md:space-y-7 space-y-5 text-md md:text-lg">
               <li className="flex items-center">
                 <img src={nodeIcon} className="w-[2rem] md:w-[3rem] mr-2" alt="Node.js" />
                 Node.js
@@ -104,8 +106,8 @@ const Technologies = () => {
             initial="hidden"
             animate={controls}
           >
-            <h1 className="md:text-2xl md:pb-6 font-light">Front End Design</h1>
-            <ul className="pt-4 space-y-3 text-md md:text-xl">
+            <h1 className="md:text-xl md:pb-6 font-light">Front End Design</h1>
+            <ul className="pt-4 space-y-3 text-md md:text-md">
               <li className="flex items-center">
                 <img src={htmlIcon} className="w-[2rem] md:w-[3rem] mr-2" alt="HTML" />
                 HTML
@@ -148,8 +150,8 @@ const Technologies = () => {
             initial="hidden"
             animate={controls}
           >
-            <h1 className="md:text-2xl md:pb-6 font-light">Languages</h1>
-            <ul className="pt-4 space-y-3 text-md md:text-xl">
+            <h1 className="md:text-xl md:pb-6 font-light">Languages</h1>
+            <ul className="pt-4 space-y-3 text-md md:text-lg">
               <li className="flex items-center">
                 <img src={pythonIcon} className="w-[2rem] md:w-[3rem] mr-2" alt="Python" />
                 Python
@@ -178,6 +180,8 @@ const Technologies = () => {
           </motion.div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

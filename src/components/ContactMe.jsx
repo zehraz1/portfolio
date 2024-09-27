@@ -46,17 +46,20 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="pt-[15rem] md:pb-[12rem] pb-[5rem]" id="contact" ref={ref}>
+
+    <div className='flex justify-center'>
+    <div className='w-[95%]'>
+    <div className="pt-[15rem] w-[99%] md:pb-[12rem] pb-[5rem]" id="contact" ref={ref}>
       <motion.div
         initial="hidden"
         animate={controls} // Trigger animations using useAnimation
         variants={formVariant}
       >
-        <h1 className="text-white text-3xl md:text-5xl lg:text-6xl text-center font-light md:pb-[4rem] pb-[2rem] md:text-left md:ml-[5rem] xl:ml-[11rem] m-4">
+        <h1 className="text-white text-3xl md:text-5xl lg:text-5xl text-center font-light md:pb-[4rem] pb-[2rem] md:text-left md:ml-[5rem] xl:ml-[11rem] m-4">
           Let's get in touch!
         </h1>
 
-        <section className="text-center text-white w-[90%] md:w-[80%] mx-auto ">
+        <section className=" text-center text-white w-[90%] md:w-[80%] mx-auto ">
           <motion.form
             className="space-y-3"
             onSubmit={sendEmail}
@@ -104,7 +107,7 @@ const ContactMe = () => {
             ></motion.textarea>
 
             <motion.button
-              className={`bg-customPurple md:w-[10rem] font-light md:flex md:justify-center md:text-lg p-2 md:p-4 hover:bg-customGrey text-white w-[40%] rounded-full mt-3 ${buttonText === 'Submitted' ? 'cursor-not-allowed' : ''}`}
+              className={`bg-customPurple md:w-[10rem] font-light md:flex md:justify-center md:text-lg p-2 md:p-4 hover:bg-purple-300 text-white w-[40%] rounded-full mt-3 ${buttonText === 'Submitted' ? 'cursor-not-allowed' : ''}`}
               type="submit"
               disabled={buttonText === 'Submitted'}
               variants={formVariant}
@@ -114,6 +117,8 @@ const ContactMe = () => {
           </motion.form>
         </section>
       </motion.div>
+    </div>
+    </div>
     </div>
   );
 };
