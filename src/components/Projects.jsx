@@ -54,11 +54,8 @@ const Projects = () => {
                     Designed and developed a full-stack e-commerce website following a provided UI. Used React for the responsive frontend, and Node.js and Flask for the backend.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mr-2">
-                      <a href="#linkhere">View Demo</a>
-                    </button>
-                    <button className="bg-white text-black p-2 rounded mt-2">
-                      <a href="#linkhere">View Source Code</a>
+                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                      <a href="https://github.com/zehraz1/projects/tree/main/E-commerce%20React">View Source Code</a>
                     </button>
                   </div>
                 </motion.div>
@@ -76,11 +73,8 @@ const Projects = () => {
                     Developed an airline registration system using C++ that efficiently handles passenger bookings, flight management, and ticketing processes.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mr-2">
-                      <a href="#linkhere">View Demo</a>
-                    </button>
-                    <button className="bg-white text-black p-2 rounded mt-2">
-                      <a href="#linkhere">View Source Code</a>
+                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                      <a href="https://github.com/zehraz1/projects/tree/main/Airline%20C%2B%2B">View Source Code</a>
                     </button>
                   </div>
                 </motion.div>
@@ -95,36 +89,32 @@ const Projects = () => {
                   <img src={javaIcon} alt="Java Application" className="w-12 h-12 mb-4" />
                   <h1 className="md:text-2xl text-xl pt-2 lg:text-3xl">Java Application</h1>
                   <p className="pt-2 leading-7 text-sm md:text-base">
-                    Developed a Java application with a GUI for a booking and management system. It includes intuitive navigation and data input validation.
+                  Developed a disaster relief system to track individuals housed in temporary shelters following natural disasters, facilitating family reunification by logging their locations, relationships, and contact with relief services.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mr-2">
-                      <a href="#linkhere">View Demo</a>
-                    </button>
-                    <button className="bg-white text-black p-2 rounded mt-2">
-                      <a href="#linkhere">View Source Code</a>
+
+                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                      <a href="https://github.com/zehraz1/projects/tree/main/Database%20Java">View Source Code</a>
                     </button>
                   </div>
                 </motion.div>
 
                 {/* Project 4: SQL Database Management */}
                 <motion.div
-                  className="text-white border border-customGrey rounded-3xl hover:border-customGray p-[1rem] mb-10 w-[90%] sm:w-[80%] md:w-full flex-shrink-0"
+                  className="text-white border border-customGrey rounded-3xl hover:border-customGray p-[1rem] h-fit mb-10 w-[90%] sm:w-[80%] md:w-full flex-shrink-0"
                   variants={projectVariants}
                   initial="hidden"
                   animate={controls} // Control animations
                 >
-                  <img src={sqlIcon} alt="SQL Database Management" className="w-12 h-12 mb-4" />
+                  <img src={sqlIcon} alt="SQL Arts Database Management" className="w-12 h-12 mb-4" />
                   <h1 className="md:text-2xl text-xl pt-2 lg:text-3xl">SQL Database Management</h1>
                   <p className="pt-2 leading-7 text-sm md:text-base">
-                    Implemented a robust database management system using SQL for handling large datasets with efficient query optimization techniques.
+                  Designed and implemented a robust SQL database for an art museum, optimizing the storage and retrieval of data on art objects, exhibitions, and users.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mr-2">
-                      <a href="#linkhere">View Demo</a>
-                    </button>
-                    <button className="bg-white text-black p-2 rounded mt-2">
-                      <a href="#linkhere">View Source Code</a>
+
+                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                      <a href="https://github.com/zehraz1/projects/tree/main/Museum%20SQL%20Python">View Source Code</a>
                     </button>
                   </div>
                 </motion.div>

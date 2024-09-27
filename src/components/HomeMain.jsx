@@ -57,7 +57,7 @@ const HomeMain = () => {
           {/* Button to Download CV */}
           <div className="mt-6">
             <a href="/path-to-your-cv.pdf" download>
-              <button className="bg-customPurple text-white font-light xl:text-md rounded-full px-8 py-3">
+              <button className="bg-white text-customGrey hover:text-customPurple font-light xl:text-md rounded-full px-8 py-3">
                 Download CV
               </button>
             </a>
