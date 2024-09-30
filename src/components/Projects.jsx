@@ -54,7 +54,7 @@ const Projects = () => {
                     Designed and developed a full-stack e-commerce website following a provided UI. Used React for the responsive frontend, and Node.js and Flask for the backend.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                    <button className="bg-white p-2 rounded mt-2 text-customPurple">
                       <a href="https://github.com/zehraz1/projects/tree/main/E-commerce%20React">View Source Code</a>
                     </button>
                   </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                     Developed an airline registration system using C++ that efficiently handles passenger bookings, flight management, and ticketing processes.
                   </p>
                   <div className="mt-4 text-sm md:text-base">
-                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                    <button className="bg-white  p-2 rounded mt-2 text-customPurple">
                       <a href="https://github.com/zehraz1/projects/tree/main/Airline%20C%2B%2B">View Source Code</a>
                     </button>
                   </div>
@@ -93,7 +93,7 @@ const Projects = () => {
                   </p>
                   <div className="mt-4 text-sm md:text-base">
 
-                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                    <button className="bg-white  p-2 rounded mt-2 text-customPurple">
                       <a href="https://github.com/zehraz1/projects/tree/main/Database%20Java">View Source Code</a>
                     </button>
                   </div>
@@ -113,7 +113,7 @@ const Projects = () => {
                   </p>
                   <div className="mt-4 text-sm md:text-base">
 
-                    <button className="bg-white text-black p-2 rounded mt-2 hover:text-customPurple">
+                    <button className="bg-white  p-2 rounded mt-2 text-customPurple">
                       <a href="https://github.com/zehraz1/projects/tree/main/Museum%20SQL%20Python">View Source Code</a>
                     </button>
                   </div>
