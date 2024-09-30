@@ -56,7 +56,7 @@ const HomeMain = () => {
 
           {/* Button to Download CV */}
           <div className="mt-6">
-            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:748c9c43-d15d-42d1-a92f-53879e81ad12" download>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:us:3150bf47-302f-42dd-be2c-0ce95660e21f" download>
               <button className="bg-white text-customPurple font-light xl:text-md rounded-full px-8 py-3">
                 Download CV
               </button>
