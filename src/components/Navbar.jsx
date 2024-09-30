@@ -18,19 +18,19 @@ const Navbar = () => {
 
             <li>
               <Link to="projects" smooth={true} duration={500} className="text-customPurple hover:text-white cursor-pointer">
-                projects
+                Projects
               </Link>
             </li>
 
             <li>
               <Link to="skills" smooth={true} duration={500} className="text-customPurple hover:text-white cursor-pointer">
-                skills
+                Skills
               </Link>
             </li>
 
             <li>
               <Link to="contact" smooth={true} duration={500} className="text-customPurple hover:text-white cursor-pointer">
-                contact
+                Contact
               </Link>
             </li>
 
