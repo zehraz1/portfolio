@@ -40,7 +40,7 @@ const Navbar = () => {
                 <img src={linkedinIcon} className="h-6 w-6 md:h-6 md:w-6" alt="LinkedIn" />
               </a>
 
-              <a href="https://github.com/zehraz1/Portfolio-Projects/">
+              <a href="https://github.com/zehraz1/projects">
                 <img src={githubIcon} className="h-6 w-6 md:h-6 md:w-6" alt="GitHub" />
               </a>
 
