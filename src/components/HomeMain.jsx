@@ -1,5 +1,5 @@
  
-import profilePic from '../assets/zehra.jpeg';
+import profilePic from '../assets/zehrapic.jpg';
 import { motion } from 'framer-motion';
 
 // Typing effect using Framer Motion
@@ -26,7 +26,7 @@ const HomeMain = () => {
       <div id='home' className="flex flex-col justify-center items-center lg:pt-[16rem] lg:pb-[10rem] max-h-screen md:pt-[10rem] md:flex-row-reverse md:justify-between md:items-center w-[90%] md:w-[85%] lg:w-[80%] pb-[5rem] pt-[5rem]">
         {/* Image on top by default, side-by-side on medium screens (on the right) */}
         <div className="flex justify-center pb-12 md:pb-10 md:p-0 md:w-1/2 lg:w-1/2">
-          <img src={profilePic} className="rounded-full h-[10rem] w-[10rem] object-cover md:h-[20rem] md:w-[20rem] lg:h-[22rem] lg:w-[22rem] " alt="Profile" />
+          <img src={profilePic} className="transition-transform rounded-full h-[10rem] w-[10rem] object-cover md:h-[20rem] md:w-[20rem] lg:h-[22rem] lg:w-[22rem] " alt="Profile" />
         </div>
 
         {/* Text content */}
@@ -56,7 +56,7 @@ const HomeMain = () => {
 
           {/* Button to Download CV */}
           <div className="mt-6">
-            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:us:3150bf47-302f-42dd-be2c-0ce95660e21f" download>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:45bc6a72-fb06-4e1c-a965-27fd20f97fae" download>
               <button className="bg-white text-customPurple font-light xl:text-md rounded-full px-8 py-3">
                 Download CV
               </button>
